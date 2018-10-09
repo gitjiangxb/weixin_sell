@@ -6,7 +6,7 @@ spring:
     password: pc12jiang
     url: jdbc:mysql://192.168.8.113:3306/imooc_weixin_sell?rewriteBatchedStatements=true&amp;useUnicode=true&characterEncoding=utf8
   jpa:
-    show-sql: true
+    show-sql: true  # spring data jpa 打印sql
     
 # 服务的配置
 server:

@@ -29,5 +29,50 @@ Logger的配置方式
 	application.yml
 	logback-spring.xml
 	
+开发说明：
+	1、若项目中不想重复getter/setter/toString等方法的编写
+		先导入：
+			<dependency>
+	            <groupId>org.projectlombok</groupId>
+	            <artifactId>lombok</artifactId>
+	        </dependency>
+		再利用注解:
+			@Data
+		最后安装插件：
+			百度
+	2、在spring中，可以利用Assert断言工具类来 检查数据合法性
+		import org.junit.Assert;
+		如：ProductCategoryRepositoryTest.class
+			
+	3、在做单元测试的时候，往往会向里面插入一些数据，如何做到保证数据库的干净啦？
+		只需要在测试用例上面加上：@Transactional注解		
+	4、当JPA自带的方法无法满足需求时:
+		支持自定义方法，但是需要注意的是 方法的命名。如：findByCategoryTypeIn
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
