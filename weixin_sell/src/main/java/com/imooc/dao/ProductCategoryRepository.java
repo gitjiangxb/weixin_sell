@@ -9,7 +9,7 @@ import com.imooc.dataObject.ProductCategory;
 /**
  * @Package:com.imooc.dao	也可以叫com.imooc.repository
  * @ClassName:ProductCategoryRepository
- * @Description:TODO 栏目实体的Dao
+ * @Description:TODO 类目实体的Dao
  * @author:Jiangxb
  * @date:2018年10月9日 下午4:26:48
  * 	extends JpaRepository<ProductCategory, Integer>

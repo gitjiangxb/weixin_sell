@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import org.hibernate.annotations.DynamicUpdate;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Package:com.imooc.dataObject
@@ -23,7 +25,9 @@ import lombok.Data;
 //@Table(name = "product_category")
 @Entity
 @DynamicUpdate	// 动态更新★
-@Data
+//@Data	// 尽量少使用全量的
+@Setter
+@Getter
 public class ProductCategory {
 	
 	/**
@@ -58,6 +62,5 @@ public class ProductCategory {
 		return "ProductCategory [categoryId=" + categoryId + ", categoryName=" + categoryName + ", categoryType="
 				+ categoryType + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
 	}
-
 	
 }

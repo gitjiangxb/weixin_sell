@@ -38,7 +38,7 @@ public class ProductCategoryRepositoryTest {
 	@Test
 	public void findOneTest() {
 		// 根据id查找
-		Optional<ProductCategory> productCategory = productCategoryRepository.findById(1);
+		Optional<ProductCategory> productCategory = productCategoryRepository.findById(11);
 		// 值不为空
 		if(productCategory.isPresent()) {
 			logger.info(productCategory.get().toString());

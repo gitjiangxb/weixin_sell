@@ -37,7 +37,11 @@ Logger的配置方式
 	            <artifactId>lombok</artifactId>
 	        </dependency>
 		再利用注解:
-			@Data
+			@Data 注解在类上面，省略所有的get set equal toString方法 
+			@Getter 注解在属性上，省略所有get方法 
+			@Setter 注解在属性上，省略所有的set方法 
+			@NoArgsConstructor注解类上，提供无参构造 
+			@AllArgsConstructor 注解在类上，提供全参构造
 		最后安装插件：
 			百度
 	2、在spring中，可以利用Assert断言工具类来 检查数据合法性
