@@ -9,7 +9,6 @@ import javax.persistence.Id;
 
 import org.hibernate.annotations.DynamicUpdate;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
