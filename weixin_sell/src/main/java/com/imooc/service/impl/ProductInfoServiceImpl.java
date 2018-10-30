@@ -27,7 +27,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
 	private ProductInfoRepository productInfoRepository;
 	
 	@Override
-	public ProductInfo findById(String productId) {
+	public ProductInfo findOne(String productId) {
 		Optional<ProductInfo> productInfo = productInfoRepository.findById(productId);
 		// 值不为空
 		if(productInfo.isPresent()) {

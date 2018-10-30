@@ -17,7 +17,7 @@ import com.imooc.dataObject.ProductInfo;
  */
 public interface ProductInfoService {
 	
-	ProductInfo findById(String productId);
+	ProductInfo findOne(String productId);
 	
 	/**
 	 * @Title:findUpAll

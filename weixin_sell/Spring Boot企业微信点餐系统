@@ -55,7 +55,11 @@ Logger的配置方式
 	
 	
 	
+插件：
+	为了让chrome浏览器按照JSON格式显示数据，需要安装插件JSONView。	
 	
+	FindBugs 插件——静态分析工具
+		https://blog.csdn.net/wyf2017/article/details/80554219
 	
 	
 	

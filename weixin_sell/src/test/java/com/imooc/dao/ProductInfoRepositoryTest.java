@@ -1,5 +1,6 @@
 package com.imooc.dao;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import org.junit.Assert;
@@ -30,7 +31,17 @@ public class ProductInfoRepositoryTest {
 	public void saveTest() {
 		// 写一个新增的测试方法
 		ProductInfo productInfo = new ProductInfo();
-		productInfo.setProductId("12313");
+		productInfo.setProductId("12315");
+		productInfo.setProductName("养生小米粥");
+		productInfo.setProductPrice(new BigDecimal(5.2));
+		productInfo.setProductStock(100);
+		productInfo.setProductDescription("小米熬的非常稠！");
+		productInfo.setProductIcon("http://xxxxx.jpg");
+		productInfo.setProductStatus(0);
+		productInfo.setCategoryType(3);
+		
+		ProductInfo result = productInfoRepository.save(productInfo);
+		Assert.assertNotNull(result);
 		
 	}
 	
